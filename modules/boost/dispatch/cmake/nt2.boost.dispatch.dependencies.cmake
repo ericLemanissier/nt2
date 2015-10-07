@@ -15,9 +15,9 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUXX
   )
   if(MINGW)
     # somehow without that MinGW stops declaring Microsoft-specific CRT functions
-    set(NT2_BOOST.DISPATCH_DEPENDENCIES_COMPILE_FLAGS "-std=gnu++0x")
+    set(NT2_BOOST.DISPATCH_DEPENDENCIES_COMPILE_FLAGS "-std=gnu++14")
   else()
-    set(NT2_BOOST.DISPATCH_DEPENDENCIES_COMPILE_FLAGS "-std=c++0x")
+    set(NT2_BOOST.DISPATCH_DEPENDENCIES_COMPILE_FLAGS "-std=c++14")
   endif()
 endif()
 

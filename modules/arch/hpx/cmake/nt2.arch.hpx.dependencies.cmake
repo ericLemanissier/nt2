@@ -74,7 +74,7 @@ if(NOT Boost_USE_STATIC_LIBS)
 endif()
 
 if(NT2_COMPILER_GCC_LIKE)
-  set(NT2_ARCH.HPX_COMPILE_FLAGS "${NT2_ARCH.HPX_COMPILE_FLAGS} -fexceptions -std=c++0x -include hpx/config.hpp")
+  set(NT2_ARCH.HPX_COMPILE_FLAGS "${NT2_ARCH.HPX_COMPILE_FLAGS} -fexceptions -std=c++14 -include hpx/config.hpp")
 elseif(MSVC)
   set(NT2_ARCH.HPX_COMPILE_FLAGS "${NT2_ARCH.HPX_COMPILE_FLAGS} /FIhpx/config.hpp /FIwinsock2.h")
 endif()
